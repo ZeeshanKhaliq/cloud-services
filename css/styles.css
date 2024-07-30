@@ -495,12 +495,6 @@ a {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .grid--1x3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* Testimonials Component */
 
 .testimonial {
@@ -533,3 +527,49 @@ a {
 }
 
 /* Callouts Component */
+
+.callout {
+  padding: 4rem;
+  border: 5px;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  color: #fff;
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+
+  background-color: var(--color-secondary);
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: center;
+  }
+
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+/* Collapsible Component */
