@@ -716,4 +716,42 @@ a {
   }
 }
 
-/* Hero Component */
+/* Hero or banner Component */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.banner__heading {
+  line-height: 7rem;
+  color: #fff;
+  font-size: 6rem;
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+}
