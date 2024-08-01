@@ -1,0 +1,101 @@
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- adding a section to wrap the grid -->
+<section class="block container">
+  <!-- adding a header to out feature section component -->
+
+  <header class="block__header">
+    <h2>Host on the Cloud to Keep Growing</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, esse.
+    </p>
+  </header>
+  <!-- Features block component -->
+
+  <article class="grid grid--1x2 feature">
+    <!-- adding the items in 1st grid i.e. icon, h3, p, link -->
+    <div>
+      <!-- Icons Component - adding an icon -->
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#easy"></use>
+        </svg>
+      </span>
+
+      <!-- adding a heading  -->
+      <h3 class="feature__heading">Super Easy to Use</h3>
+      <!-- adding a paragraph -->
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
+        doloribus molestias voluptatem dolorum alias consectetur impedit beatae
+        eaque explicabo id.
+      </p>
+
+      <!-- adding an arrow link -->
+      <a href="#" class="link-arrow">Learn More</a>
+    </div>
+
+    <!-- adding the 2nd grid item which is an image -->
+
+    <!-- adding a picture element with a srcset to add variety of images -->
+    <picture>
+      <source
+        type="image/webp"
+        srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
+      />
+      <source
+        type="image/jpg"
+        srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"
+      />
+      <!-- adding a jpg image for wider desktop screen -->
+      <img src="images/easy@2x.jpg" alt="" class="feature__image" />
+    </picture>
+  </article>
+  <!-- end of 1st section -->
+</section>
+
+<!-- ----------------------------------------------------------------------------------------- -->
+<!-- repeating the above section as per our website requirements -->
+<!-- adding a section to wrap the grid -->
+<section class="block container">
+  <!-- Features block component -->
+
+  <article class="grid grid--1x2 feature">
+    <!-- adding the 2nd grid item which is an image -->
+
+    <!-- adding a picture element with a srcset to add variety of images -->
+    <picture>
+      <source
+        type="image/webp"
+        srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
+      />
+      <source
+        type="image/jpg"
+        srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"
+      />
+      <!-- adding a jpg image for wider desktop screen -->
+      <img src="images/fast@2x.jpg" alt="" class="feature__image" />
+    </picture>
+    <!-- adding the items in 1st grid i.e. icon, h3, p, link -->
+    <div class="feature__content">
+      <!-- Icons Component - adding an icon -->
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="images/sprite.svg#computer"></use>
+        </svg>
+      </span>
+
+      <!-- adding a heading  -->
+      <h3 class="feature__heading">Simply Fast website</h3>
+      <!-- adding a paragraph -->
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
+        doloribus molestias voluptatem dolorum alias consectetur impedit beatae
+        eaque explicabo id.
+      </p>
+
+      <!-- adding an arrow link -->
+      <a href="#" class="link-arrow">Learn More</a>
+    </div>
+  </article>
+</section>
+<!-- end of 2nd section -->
