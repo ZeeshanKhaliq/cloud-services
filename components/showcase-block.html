@@ -1,0 +1,106 @@
+<!-- Showcase block component -->
+
+<!-- adding a section to implement showcase -->
+<section class="block block--darker block--skewed-right block-showcase">
+  <!-- adding a header for this showcase block -->
+  <header class="block__header">
+    <h2 class="block__heading">User-friendly Control Panel</h2>
+  </header>
+
+  <!-- adding a grid with 1x2 -->
+  <div class="container grid grid--1x2">
+    <!-- adding an image as a 1st item of grid -->
+    <picture class="block-showcase__image">
+      <source
+        type="image/webp"
+        srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+      />
+      <source
+        type="image/png"
+        srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
+      />
+      <img src="images/ipad.png" alt="" />
+    </picture>
+
+    <!-- adding media objects using ul and li tags which are more semantic than div element -->
+    <!-- adding 2nd grid items which are media objects  -->
+
+    <ul class="list">
+      <!-- Adding 1st media object in showcase component -->
+      <li>
+        <!-- Media Object Component -->
+        <div class="media">
+          <div class="media__image">
+            <!-- Icons Component -->
+            <span class="icon-container block-showcase__icon">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#settings"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title block__heading">
+              Easy Start & Managed Updates
+            </h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloribus, porro ea? Sit repudiandae aliquam quaerat nesciunt
+              facere amet possimus beatae?
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <!-- adding 2nd media object in showcase panel component -->
+
+      <li>
+        <!-- Media Object Component -->
+        <div class="media">
+          <div class="media__image">
+            <!-- Icons Component -->
+            <span class="icon-container block-showcase__icon">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#growth"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title block__heading">Staging, GIT & WP-CLI</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloribus, porro ea? Sit repudiandae aliquam quaerat nesciunt
+              facere amet possimus beatae?
+            </p>
+          </div>
+        </div>
+      </li>
+
+      <!-- adding 3rd media object in showcase panel component -->
+
+      <li>
+        <!-- Media Object Component -->
+        <div class="media">
+          <div class="media__image">
+            <!-- Icons Component -->
+            <span class="icon-container block-showcase__icon">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#wordpress"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="media__body">
+            <h3 class="media__title block__heading">Dynamic Caching & More</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloribus, porro ea? Sit repudiandae aliquam quaerat nesciunt
+              facere amet possimus beatae?
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- end of media objects -->
+  </div>
+  <!-- end of grid container -->
+</section>
+<!-- end of showcase panel component -->

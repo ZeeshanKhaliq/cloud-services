@@ -30,6 +30,11 @@ html {
 
 /* Typography for the website*/
 
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
 
@@ -57,6 +62,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 p {
@@ -151,8 +157,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-
-  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -163,6 +167,8 @@ a {
 .list--tick {
   list-style: url(../icons/tick.svg);
   padding-left: 3rem;
+
+  color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -441,6 +447,8 @@ a {
 
 .media {
   display: flex;
+
+  margin-bottom: 4rem;
 }
 
 .media__title {
@@ -665,13 +673,13 @@ a {
 .block--skewed-right {
   padding-bottom: calc(var(--padding-verticle) + 4rem);
 
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left {
   padding-bottom: calc(var(--padding-verticle) + 4rem);
 
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
 
 .container {
@@ -854,3 +862,36 @@ a {
 }
 
 /* Showcase block component */
+
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase__image > img {
+    justify-self: end;
+    max-width: 700px;
+  }
+
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    width: auto;
+  }
+}
+
+.block-showcase__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+
+  background: none;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Testimonial Block Component */
