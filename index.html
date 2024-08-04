@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MZK - Go Online for Just $9</title>
 
+    <!-- Adding Google Fonts library for our selected fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,8 +13,12 @@
       rel="stylesheet"
     />
 
+    <!-- Adding CSS Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Adding CSS file for AOS-Animate on Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
 
   <body>
@@ -49,7 +54,7 @@
     <section class="block block--darker block--skewed-left hero">
       <div class="grid grid--1x2 container">
         <!-- Inserting contents for 1st grid item -->
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="fade-up">
           <h1 class="banner__heading">Cloud Hosting for Pros</h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
@@ -58,7 +63,7 @@
         </header>
 
         <!-- Insertin an image for 2nd grid item -->
-        <picture>
+        <picture data-aos="flip-down">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -78,7 +83,7 @@
 
     <!-- Domain Block Component -->
     <section class="block container block-domain">
-      <header class="block__header">
+      <header class="block__header" data-aos="slide-right">
         <!-- adding a heading -->
         <h2>Starting at $9 per month.</h2>
         <!-- adding a paragraph -->
@@ -120,7 +125,7 @@
     <!-- #04- Adding Plans Component  for our website-->
 
     <!-- Plans Block Component -->
-    <section class="block container block-plans">
+    <section class="block container block-plans" data-aos="slide-down">
       <!-- adding a grid of 1x3 -->
       <div class="grid grid--1x3">
         <!-- adding th 1st plan item which is not a popular one -->
@@ -234,7 +239,7 @@
 
       <article class="grid grid--1x2 feature">
         <!-- adding the items in 1st grid i.e. icon, h3, p, link -->
-        <div>
+        <div data-aos="fade-right">
           <!-- Icons Component - adding an icon -->
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -258,7 +263,7 @@
         <!-- adding the 2nd grid item which is an image -->
 
         <!-- adding a picture element with a srcset to add variety of images -->
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -284,7 +289,7 @@
         <!-- adding the 2nd grid item which is an image -->
 
         <!-- adding a picture element with a srcset to add variety of images -->
-        <picture>
+        <picture data-aos="flip-up">
           <source
             type="image/webp"
             srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
@@ -297,7 +302,7 @@
           <img src="images/fast@2x.jpg" alt="" class="feature__image" />
         </picture>
         <!-- adding the items in 1st grid i.e. icon, h3, p, link -->
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-down-right">
           <!-- Icons Component - adding an icon -->
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -328,7 +333,7 @@
 
       <article class="grid grid--1x2 feature">
         <!-- adding the items in 1st grid i.e. icon, h3, p, link -->
-        <div>
+        <div data-aos="slide-up">
           <!-- Icons Component - adding an icon -->
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -352,7 +357,7 @@
         <!-- adding the 2nd grid item which is an image -->
 
         <!-- adding a picture element with a srcset to add variety of images -->
-        <picture>
+        <picture data-aos="zoom-out">
           <source
             type="image/webp"
             srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x"
@@ -379,7 +384,7 @@
         <!-- adding the 2nd grid item which is an image -->
 
         <!-- adding a picture element with a srcset to add variety of images -->
-        <picture>
+        <picture data-aos="flip-right">
           <source
             type="image/webp"
             srcset="images/support.webp 1x, images/support@2x.webp 2x"
@@ -392,7 +397,7 @@
           <img src="images/support@2x.jpg" alt="" class="feature__image" />
         </picture>
         <!-- adding the items in 1st grid i.e. icon, h3, p, link -->
-        <div class="feature__content">
+        <div class="feature__content" data-aos="slide-down">
           <!-- Icons Component - adding an icon -->
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -423,7 +428,10 @@
 
     <!-- Showcase block component -->
     <!-- adding a section to implement showcase -->
-    <section class="block block--darker block--skewed-right block-showcase">
+    <section
+      class="block block--darker block--skewed-right block-showcase"
+      data-aos="slide-left"
+    >
       <!-- adding a header for this showcase block -->
       <header class="block__header">
         <h2 class="block__heading">User-friendly Control Panel</h2>
@@ -546,7 +554,7 @@
 
       <!-- adding testimonial component for this component -->
 
-      <div class="container">
+      <div class="container" data-aos="zoom-out-up">
         <!-- Testimonials Component -->
         <div class="card testimonial">
           <div class="grid grid--1x2">
@@ -554,6 +562,7 @@
               <img
                 src="images/testimonial.jpg"
                 alt="A happy, smiling face customer!"
+                data-aos="slide-down"
               />
 
               <!-- Icons Component -->
@@ -565,14 +574,14 @@
             </div>
 
             <!-- Quotes Component -->
-            <blockquote class="quote">
+            <blockquote class="quote" data-aos="flip-up">
               <p class="quote__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
                 eaque suscipit tempore atque asperiores sit autem, neque
                 repellat velit accusamus.
               </p>
 
-              <footer>
+              <footer data-aos="slide-down">
                 <!-- Media Object Component -->
                 <div class="media">
                   <div class="media__image">
@@ -602,7 +611,7 @@
     <!-- #08- Adding Callout Component -->
 
     <!-- Callouts Component -->
-    <div class="callout callout--primary">
+    <div class="callout callout--primary" data-aos="flip-up">
       <div class="grid grid--1x2">
         <div class="callout__content">
           <h2 class="callout__heading">Ready to Get Started?</h2>
@@ -621,10 +630,10 @@
     <!-- #09- Adding a completed footer component -->
 
     <!-- footer component -->
-    <footer class="block block--darker footer">
+    <footer class="block block--darker footer" data-aos="flip-left">
       <!-- adding a container for grid to insert collapsibles -->
 
-      <div class="container grid footer__sections">
+      <div class="container grid footer__sections" data-aos="slide-down">
         <!-- Collapsibles Component -->
 
         <!-- adding 1st section in our footer -->
@@ -637,7 +646,7 @@
           </header>
 
           <!-- Content Section -->
-          <div class="collapsible__content">
+          <div class="collapsible__content" data-aos="zoom-out">
             <ul class="list">
               <li><a href="#">Website Hosting</a></li>
               <li><a href="#">Free Automated Wordpress</a></li>
@@ -648,7 +657,7 @@
         <!-- end of 1st collapsible section -->
 
         <!-- adding 2nd section in our footer -->
-        <section class="collapsible footer__section">
+        <section class="collapsible footer__section" data-aos="zoom-out-up">
           <!-- Header Section -->
           <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Company</h2>
@@ -657,7 +666,7 @@
           </header>
 
           <!-- Content Section -->
-          <div class="collapsible__content">
+          <div class="collapsible__content" data-aos="flip-left">
             <ul class="list">
               <li><a href="#">About</a></li>
               <li><a href="#">Affiliates</a></li>
@@ -720,5 +729,11 @@
 
     <!-- Adding JS code to implement collapsing features in entire website -->
     <script src="js/main.js"></script>
+
+    <!-- Adding JS code for AOS-Animate on Scroll Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
