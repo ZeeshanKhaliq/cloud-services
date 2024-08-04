@@ -157,6 +157,8 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
+
+  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -222,7 +224,8 @@ a {
 .btn {
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  /* adding a vertical and horizontal padding */
+  padding: 2rem 4vw;
   text-transform: uppercase;
 
   border: 0;
@@ -322,6 +325,8 @@ a {
   flex-grow: 1;
 
   padding: 1.5rem 2rem;
+  /* to override the default width added by chrome */
+  width: 0;
 }
 
 .input-group .btn {
@@ -805,7 +810,7 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
 
   font-size: 2rem;
