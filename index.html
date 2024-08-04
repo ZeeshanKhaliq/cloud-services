@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MZK - Go Online for Just $9</title>
 
+    <!-- adding meta tags for SEO -->
+    <meta
+      name="description"
+      content="Deploy your websites in less than 60 seconds."
+    />
+
+    <!-- adding The Open Graph (ogp.me) protocol developed by Facebook (SEO)-->
+    <meta
+      property="ogp:title"
+      content="Deploy your websites in less than 60 seconds.
+               Highly reliable cloud hosting services."
+    />
+    <meta
+      property="ogp:description"
+      content="Deploy your websites in less than 60 seconds.
+               Highly reliable cloud hosting services."
+    />
+    <meta property="ogp:type" content="websites" />
+    <meta property="ogp:image" content="http://" />
+    <meta property="ogp:url" content="https://moshified.com" />
+
     <!-- Adding Google Fonts library for our selected fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,7 +75,7 @@
     <section class="block block--darker block--skewed-left hero">
       <div class="grid grid--1x2 container">
         <!-- Inserting contents for 1st grid item -->
-        <header class="block__header hero__content" data-aos="fade-up">
+        <header class="block__header hero__content">
           <h1 class="banner__heading">Cloud Hosting for Pros</h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
@@ -63,7 +84,7 @@
         </header>
 
         <!-- Insertin an image for 2nd grid item -->
-        <picture data-aos="flip-down">
+        <picture data-aos="slide-up">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -83,7 +104,7 @@
 
     <!-- Domain Block Component -->
     <section class="block container block-domain">
-      <header class="block__header" data-aos="slide-right">
+      <header class="block__header">
         <!-- adding a heading -->
         <h2>Starting at $9 per month.</h2>
         <!-- adding a paragraph -->
@@ -92,7 +113,7 @@
           dignissimos!
         </p>
         <!-- Inputs group Component -->
-        <div class="input-group">
+        <div class="input-group" data-aos="zoom-out">
           <input
             type="text"
             class="input"
@@ -125,7 +146,7 @@
     <!-- #04- Adding Plans Component  for our website-->
 
     <!-- Plans Block Component -->
-    <section class="block container block-plans" data-aos="slide-down">
+    <section class="block container block-plans">
       <!-- adding a grid of 1x3 -->
       <div class="grid grid--1x3">
         <!-- adding th 1st plan item which is not a popular one -->
@@ -223,7 +244,6 @@
 
     <!-- #05- Adding a  Feature Component in our website-->
 
-    <!-- -------------------------------------------------------------------------------------------- -->
     <!-- adding a section to wrap the grid -->
     <section class="block container">
       <!-- adding a header to out feature section component -->
@@ -239,7 +259,7 @@
 
       <article class="grid grid--1x2 feature">
         <!-- adding the items in 1st grid i.e. icon, h3, p, link -->
-        <div data-aos="fade-right">
+        <div>
           <!-- Icons Component - adding an icon -->
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -263,7 +283,7 @@
         <!-- adding the 2nd grid item which is an image -->
 
         <!-- adding a picture element with a srcset to add variety of images -->
-        <picture data-aos="zoom-in-left">
+        <picture data-aos="fade-up">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -279,7 +299,6 @@
       <!-- end of 1st section -->
     </section>
 
-    <!-- ----------------------------------------------------------------------------------------- -->
     <!-- repeating the above section as per our website requirements -->
     <!-- adding a section to wrap the grid -->
     <section class="block container">
@@ -289,7 +308,7 @@
         <!-- adding the 2nd grid item which is an image -->
 
         <!-- adding a picture element with a srcset to add variety of images -->
-        <picture data-aos="flip-up">
+        <picture data-aos="flip-down">
           <source
             type="image/webp"
             srcset="images/fast.webp 1x, images/fast@2x.webp 2x"
@@ -302,7 +321,7 @@
           <img src="images/fast@2x.jpg" alt="" class="feature__image" />
         </picture>
         <!-- adding the items in 1st grid i.e. icon, h3, p, link -->
-        <div class="feature__content" data-aos="fade-down-right">
+        <div class="feature__content">
           <!-- Icons Component - adding an icon -->
           <span class="icon-container">
             <svg class="icon icon--primary">
@@ -325,7 +344,6 @@
       </article>
     </section>
     <!-- end of 2nd section -->
-    <!-- -------------------------------------------------------------------------------------------- -->
 
     <!-- adding a section to wrap the grid -->
     <section class="block container">
@@ -372,9 +390,7 @@
       </article>
       <!-- end of 3rd section -->
     </section>
-    <!-- ----------------------------------------------------------------------------------------- -->
 
-    <!-- ----------------------------------------------------------------------------------------- -->
     <!-- repeating the above section as per our website requirements -->
     <!-- adding a section to wrap the grid -->
     <section class="block container">
@@ -420,18 +436,13 @@
       </article>
     </section>
     <!-- end of 4th section -->
-
-    <!-- -------------------------------------------------------------------------------------------- -->
     <!-- end of feature component section -->
 
     <!-- #06- Adding showcase component -->
 
     <!-- Showcase block component -->
     <!-- adding a section to implement showcase -->
-    <section
-      class="block block--darker block--skewed-right block-showcase"
-      data-aos="slide-left"
-    >
+    <section class="block block--darker block--skewed-right block-showcase">
       <!-- adding a header for this showcase block -->
       <header class="block__header">
         <h2 class="block__heading">User-friendly Control Panel</h2>
@@ -554,7 +565,7 @@
 
       <!-- adding testimonial component for this component -->
 
-      <div class="container" data-aos="zoom-out-up">
+      <div class="container">
         <!-- Testimonials Component -->
         <div class="card testimonial">
           <div class="grid grid--1x2">
@@ -574,14 +585,14 @@
             </div>
 
             <!-- Quotes Component -->
-            <blockquote class="quote" data-aos="flip-up">
+            <blockquote class="quote">
               <p class="quote__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
                 eaque suscipit tempore atque asperiores sit autem, neque
                 repellat velit accusamus.
               </p>
 
-              <footer data-aos="slide-down">
+              <footer>
                 <!-- Media Object Component -->
                 <div class="media">
                   <div class="media__image">
@@ -611,7 +622,7 @@
     <!-- #08- Adding Callout Component -->
 
     <!-- Callouts Component -->
-    <div class="callout callout--primary" data-aos="flip-up">
+    <div class="callout callout--primary">
       <div class="grid grid--1x2">
         <div class="callout__content">
           <h2 class="callout__heading">Ready to Get Started?</h2>
@@ -630,10 +641,10 @@
     <!-- #09- Adding a completed footer component -->
 
     <!-- footer component -->
-    <footer class="block block--darker footer" data-aos="flip-left">
+    <footer class="block block--darker footer">
       <!-- adding a container for grid to insert collapsibles -->
 
-      <div class="container grid footer__sections" data-aos="slide-down">
+      <div class="container grid footer__sections">
         <!-- Collapsibles Component -->
 
         <!-- adding 1st section in our footer -->
@@ -646,7 +657,7 @@
           </header>
 
           <!-- Content Section -->
-          <div class="collapsible__content" data-aos="zoom-out">
+          <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Website Hosting</a></li>
               <li><a href="#">Free Automated Wordpress</a></li>
@@ -657,7 +668,7 @@
         <!-- end of 1st collapsible section -->
 
         <!-- adding 2nd section in our footer -->
-        <section class="collapsible footer__section" data-aos="zoom-out-up">
+        <section class="collapsible footer__section">
           <!-- Header Section -->
           <header class="collapsible__header">
             <h2 class="collapsible__heading footer__heading">Company</h2>
@@ -666,7 +677,7 @@
           </header>
 
           <!-- Content Section -->
-          <div class="collapsible__content" data-aos="flip-left">
+          <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">About</a></li>
               <li><a href="#">Affiliates</a></li>
